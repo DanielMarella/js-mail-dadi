@@ -1,0 +1,58 @@
+
+
+.container{
+    height: 200px;
+    width: 200px;
+    border: 10px solid black;
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+button{
+    padding: 10px;
+    border-radius: 20px;
+    margin-top: 10px;
+    animation: button 2.5s linear;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes button{
+    100%,0%{
+        background-color: rgb(255,0,0);
+    }
+    8%{
+        background-color: rgb(255,127,0);
+    }
+    16%{
+        background-color: rgb(255,255,0);
+    }
+    25%{
+        background-color: rgb(127,255,0);
+    }
+    33%{
+        background-color: rgb(0,255,0);
+    }
+    41%{
+        background-color: rgb(0,255,127);
+    }
+    50%{
+        background-color: rgb(0,255,255);
+    }
+    58%{
+        background-color: rgb(0,127,255);
+    }
+    66%{
+        background-color: rgb(0,0,255);
+    }
+    75%{
+        background-color: rgb(127,0,255);
+    }
+    83%{
+        background-color: rgb(255,0,255);
+    }
+    91%{
+        background-color: rgb(255,0,127);
+    }
+}
