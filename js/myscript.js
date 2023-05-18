@@ -31,29 +31,26 @@ function roundNumber(min, max) {
 //*************************************************************************************
 
 
-function trovaEmail(email, listaEmail) {
-    for (let i = 0; i < listaEmail.length; i++) {
-        if (listaEmail[i] === email) {
-        return true;
-        }
-    }
-    return false;
-}
 
 const emailList = ["lupolucio@melevisione.it", "giovannimuciacia@artattak.com", "vittoriosgarbi@capra.it", "magootelma@magia.it", "fabriziocorona@foto.it", "antoniozequila@maipiu.org"];
 
-const emailInserita = document.getElementById('inputEmail');
+const emailInserita = prompt('inserisci la tua mail');
 
-if (trovaEmail(emailInserita.value, emailList)) {
-console.log("L'indirizzo email è presente nell'array.");
-} else {
+isMailFound = false;
+
+    for (let i = 0; i < emailList.length; i++) {
+        if (emailList[i] === emailInserita) {
+        isMailFound = true;
+        }
+    }
+
+
+    if (isMailFound) {
+    console.log("L'indirizzo email è presente nell'array.");
+}
+    else {
     console.log("L'indirizzo email non è presente nell'array.");
 }
-
-
-
-
-
 
 
 
